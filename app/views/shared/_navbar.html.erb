@@ -1,6 +1,6 @@
-<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon fixed-top" style=" padding-left: 40px; padding-right: 40px;">
   <%= link_to "#", class: "navbar-brand" do %>
-    <%= image_tag "https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/logo.png" %>
+    <%= image_tag "https://i.ibb.co/0fVfd4J/Logo-Makr-0v-Pfu-W.png" %>
   <% end %>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -10,24 +10,35 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <% if user_signed_in? %>
-        <li class="nav-item active">
-          <%= link_to "Home", "#", class: "nav-link" %>
+      <li class="nav-item">
+          <a href="/" class="nav-link text-uppercase font-weight-bold">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#about" class="nav-link text-uppercase font-weight-bold">About us</a>
         </li>
         <li class="nav-item">
-          <%= link_to "Messages", "#", class: "nav-link" %>
+          <a href="#roadmap" class="nav-link text-uppercase font-weight-bold">Road Map</a>
         </li>
+        <li class="nav-item">
+          <a href="#team" class="nav-link text-uppercase font-weight-bold">Team</a>
+        </li>
+        <li class="nav-item">
+          <a href="#Faq" class="nav-link text-uppercase font-weight-bold">Faq</a>
+        </li>
+        <li class="nav-item">
+          <a href="#sponsors" class="nav-link text-uppercase font-weight-bold">Sponsors</a>
+        </li>
+
+       <a href="https://t.me/+9yiFcK1sE-llODlh"> <button class="btn btn-outline-black my-2 my-sm-0" type="submit"><i class="fab fa-telegram"></i> Join Now</button></a>
+        <% if user_signed_in? %>
         <li class="nav-item dropdown">
           <%= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-            <%= link_to "Action", "#", class: "dropdown-item" %>
+            <%= link_to "Home", "#", class: "dropdown-item" %>
             <%= link_to "Another action", "#", class: "dropdown-item" %>
             <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
           </div>
-        </li>
-      <% else %>
-        <li class="nav-item">
-          <%= link_to "Login", new_user_session_path, class: "nav-link" %>
         </li>
       <% end %>
     </ul>

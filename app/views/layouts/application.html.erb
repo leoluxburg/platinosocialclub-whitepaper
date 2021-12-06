@@ -9,12 +9,21 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
   </head>
 
-  <body>
-    <%= render 'shared/navbar' %>
-    <%= render 'shared/flashes' %>
+ <body class="Site">
+  <%= render 'shared/navbar' %>
+  <%= render 'shared/flashes' %>
+  <main class="Site-content">
+    <div class="content">
+      <%= yield %>
+    </div>
+  </main>
+  <%= render 'shared/footer' %>
 
-    <%= yield %>
-  </body>
+
+</body>
 </html>

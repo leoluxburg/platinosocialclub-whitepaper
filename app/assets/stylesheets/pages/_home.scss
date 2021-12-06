@@ -1,1 +1,57 @@
-// Specific CSS for your home-page
+.banner {
+  color: white;
+  text-align: center;
+  height: 100vh;
+  background-size: cover !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position:relative;
+
+}
+.footer2{
+  background-color: black;
+}
+.footer2 img{
+  height: 100px;
+}
+
+.Site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.Site-content {
+  flex: 1;
+}
+
+.btn-dark{
+  background-color:black !important;
+}
+
+
+.btn-outline-black {
+    color: black;
+    border-color: black;
+}
+.btn-outline-black:hover {
+    color: white;
+    border-color: black;
+    background-color:black;
+}
+
+
+.btn-outline-white {
+    color: white;
+    border-color: white;
+}
+.btn-outline-black:hover {
+    color: black;
+    border-color: white;
+    background-color:white;
+}
+
+h1, h2, h3, h4, h5, {
+  font-family: 'Cinzel Decorative', cursive;
+}
